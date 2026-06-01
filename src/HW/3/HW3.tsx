@@ -32,11 +32,8 @@ export const HW3 = () => {
       {currentText ? (<h1 id={'hw03-text'}>{currentText}</h1>) : 
                       (<h1 id={'hw03-default-text'}>Здесь появится новое дело</h1>)}
         <input id={'hw03-input'} type="text" value={currentText} onChange={handleChange} />
-
         <button id={'hw03-button'} onClick={handleSave}>Cохранить</button>
-
         <h1 style={{ marginTop: '50px' }}>СПИСОК ДЕЛ НА ДЕНЬ:</h1>
-
         <ol id={'hw03-tasks'}>  
           {
           texts.map((el, index) => {
